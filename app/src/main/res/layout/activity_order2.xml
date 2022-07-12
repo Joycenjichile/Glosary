@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/tvimage"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OrderActivity2">
+
+    <TextView
+        android:id="@+id/tvOrder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#FFC107"
+        android:text="Hi vincent"
+        android:textColor="#1B7A06"
+        android:textColorHint="#FF9800"
+        android:textColorLink="#E91E63"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.19"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/tvFood"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:text="Order and Eat"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="@+id/tvOrder"
+        app:layout_constraintHorizontal_bias="0.39"
+        app:layout_constraintStart_toStartOf="@+id/tvOrder"
+        app:layout_constraintTop_toBottomOf="@+id/tvOrder" />
+
+    <ImageView
+        android:id="@+id/imgGere"
+        android:layout_width="141dp"
+        android:layout_height="88dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tvFood"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvFood"
+        app:layout_constraintTop_toTopOf="@+id/tvFood"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/gere" />
+
+    <Button
+        android:id="@+id/btnOrder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:background="#FF9800"
+        android:text="Find your food"
+        app:cornerRadius="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.23"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvFood" />
+
+    <TextView
+        android:id="@+id/tvDeliver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="8dp"
+        android:text="Free delivery"
+        android:textColor="#FF5722"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.21"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnOrder" />
+
+    <TextView
+        android:id="@+id/tvCar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:background="#FFC107"
+        android:text="Catergory"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.25"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvDeliver" />
+
+    <ImageView
+        android:id="@+id/imgChips"
+        android:layout_width="174dp"
+        android:layout_height="115dp"
+        android:layout_marginStart="16dp"
+        android:background="#4CAF50"
+        app:layout_constraintBottom_toTopOf="@+id/imgPizza"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvCar"
+        app:layout_constraintVertical_bias="0.32999998"
+        app:srcCompat="@drawable/chips" />
+
+    <ImageView
+        android:id="@+id/imgFish"
+        android:layout_width="199dp"
+        android:layout_height="140dp"
+        android:layout_marginStart="16dp"
+        android:background="#4CAF50"
+        app:circularflow_defaultRadius="24dp"
+        app:circularflow_radiusInDP="24dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imgChips"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/imgChips"
+        app:layout_constraintTop_toBottomOf="@+id/tvCar"
+        app:srcCompat="@drawable/fish" />
+
+    <ImageView
+        android:id="@+id/imgPizza"
+        android:layout_width="175dp"
+        android:layout_height="130dp"
+        android:layout_marginTop="32dp"
+        android:background="#4CAF50"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.07"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgChips"
+        app:srcCompat="@drawable/pizza" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="196dp"
+        android:layout_height="137dp"
+        android:layout_marginTop="24dp"
+        android:background="#4CAF50"
+        app:layout_constraintBottom_toBottomOf="@+id/imgPizza"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.67"
+        app:layout_constraintStart_toEndOf="@+id/imgPizza"
+        app:layout_constraintTop_toBottomOf="@+id/imgFish"
+        app:srcCompat="@drawable/ugali" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
