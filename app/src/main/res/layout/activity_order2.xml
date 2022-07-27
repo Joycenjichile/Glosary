@@ -13,7 +13,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:backgroundTint="#FFC107"
-        android:text="Hi vincent"
+        android:text="Hey Gerrald"
         android:textColor="#1B7A06"
         android:textColorHint="#FF9800"
         android:textColorLink="#E91E63"
@@ -34,7 +34,7 @@
         android:text="Order and Eat"
         android:textSize="25sp"
         app:layout_constraintEnd_toEndOf="@+id/tvOrder"
-        app:layout_constraintHorizontal_bias="0.39"
+        app:layout_constraintHorizontal_bias="0.63"
         app:layout_constraintStart_toStartOf="@+id/tvOrder"
         app:layout_constraintTop_toBottomOf="@+id/tvOrder" />
 
@@ -67,7 +67,7 @@
         android:id="@+id/tvDeliver"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="32dp"
         android:layout_marginEnd="8dp"
         android:text="Free delivery"
         android:textColor="#FF5722"
@@ -81,65 +81,86 @@
         android:id="@+id/tvCar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="24dp"
         android:background="#FFC107"
         android:text="Catergory"
         android:textSize="25sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.25"
+        app:layout_constraintHorizontal_bias="0.52"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvDeliver" />
 
-    <ImageView
-        android:id="@+id/imgChips"
-        android:layout_width="174dp"
-        android:layout_height="115dp"
-        android:layout_marginStart="16dp"
-        android:background="#4CAF50"
-        app:layout_constraintBottom_toTopOf="@+id/imgPizza"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvCar"
-        app:layout_constraintVertical_bias="0.32999998"
-        app:srcCompat="@drawable/chips" />
-
-    <ImageView
-        android:id="@+id/imgFish"
-        android:layout_width="199dp"
-        android:layout_height="140dp"
-        android:layout_marginStart="16dp"
-        android:background="#4CAF50"
-        app:circularflow_defaultRadius="24dp"
-        app:circularflow_radiusInDP="24dp"
-        app:layout_constraintBottom_toBottomOf="@+id/imgChips"
-        app:layout_constraintEnd_toEndOf="parent"
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Back"
+        app:layout_constraintEnd_toStartOf="@+id/btnNt"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/imgChips"
-        app:layout_constraintTop_toBottomOf="@+id/tvCar"
-        app:srcCompat="@drawable/fish" />
-
-    <ImageView
-        android:id="@+id/imgPizza"
-        android:layout_width="175dp"
-        android:layout_height="130dp"
-        android:layout_marginTop="32dp"
-        android:background="#4CAF50"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.07"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imgChips"
-        app:srcCompat="@drawable/pizza" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+    <Button
+        android:id="@+id/btnNt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="32dp"
+        android:text="Next"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnBack"
+        app:layout_constraintTop_toTopOf="@+id/btnBack" />
 
     <ImageView
-        android:id="@+id/imageView6"
-        android:layout_width="196dp"
+        android:id="@+id/imageView"
+        android:layout_width="156dp"
         android:layout_height="137dp"
-        android:layout_marginTop="24dp"
-        android:background="#4CAF50"
-        app:layout_constraintBottom_toBottomOf="@+id/imgPizza"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="#FFC107"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvCar"
+        app:srcCompat="@drawable/onion" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="222dp"
+        android:layout_height="138dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="4dp"
+        android:background="#FFC107"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.67"
-        app:layout_constraintStart_toEndOf="@+id/imgPizza"
-        app:layout_constraintTop_toBottomOf="@+id/imgFish"
-        app:srcCompat="@drawable/ugali" />
+        app:layout_constraintHorizontal_bias="0.42"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/tvCar"
+        app:srcCompat="@drawable/pota" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="159dp"
+        android:layout_height="110dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:background="#FFC107"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:srcCompat="@drawable/fsh" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="221dp"
+        android:layout_height="105dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="8dp"
+        android:background="#FFC107"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.22"
+        app:layout_constraintStart_toEndOf="@+id/imageView3"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/toma" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
