@@ -6,6 +6,7 @@
         <entry key="app/src/main/res/drawable/splash_bg.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.18" />
         <entry key="app/src/main/res/layout/activity_order2.xml" value="0.19375" />
+        <entry key="app/src/main/res/layout/activity_price.xml" value="0.190625" />
       </map>
     </option>
   </component>
